@@ -1,4 +1,4 @@
-# Sprint-Promp-and-Artificial-Intelligence
+# Sprint-Prompt-and-Artificial-Intelligence
 ChargeGrid Intelligence — Sprint 1:  Exploração e Planejamento do Chatbot GoodWe
 1. Identificação do Projeto
 Projeto: ChargeGrid Intelligence (EV Challenge 2026)
