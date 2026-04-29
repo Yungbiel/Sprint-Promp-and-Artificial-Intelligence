@@ -13,6 +13,24 @@ Gerenciamento na Prática:
 Orquestração de Potência: O chatbot monitora o limite de carga da rede local. Se um operador perguntar "Posso liberar 50kW para o carregador 3?", o bot analisa o consumo atual e responde com uma autorização ou sugere uma redução de potência para evitar a queda do disjuntor geral.
 Registro e Faturamento: Ele automatiza a extração de dados de ciclos (início/fim da carga, kWh consumidos) e gera relatórios instantâneos de faturamento para o cliente final, eliminando a necessidade de planilhas manuais.
 Monitoramento de Status: Utiliza ferramentas de diagnóstico para interpretar erros de comunicação (como falhas no protocolo RS485 ou Modbus) e traduzi-los em ações corretivas simples para o operador de campo.
+2.2. Definição de Persona e Escopo
+Para garantir que o ChargeGrid Assistant seja uma ferramenta operacional de alta precisão, definimos o público-alvo e os limites de atuação do sistema.
+A Persona: Um Gestor de Operações (Operador Comercial)
+Perfil: Profissional técnico-comercial responsável por monitorar a frota de carregadores em eletropostos ou hubs de recarga.
+Necessidade: Ele não tem tempo para analisar logs complexos de sistema; precisa de respostas rápidas sobre a viabilidade técnica de novas recargas e relatórios de faturamento precisos.
+Dor Principal: O medo de desarmar o disjuntor geral do estabelecimento por excesso de carga e a dificuldade em calcular o faturamento individualizado de cada ciclo de forma manual.
+Objetivo com o Chatbot: Ter um "copiloto" que valide a segurança da rede em segundos e automatize o fechamento financeiro dos clientes.
+Escopo do Projeto
+O chatbot atuará estritamente dentro das fronteiras operacionais da infraestrutura GoodWe:
+O que o Chatbot FAZ (In-Scope):
+Validação de solicitações de aumento de potência baseadas no limite da rede local.
+Cálculo de faturamento (Consumo em kWh × Tarifa configurada).
+Tradução de códigos de erro técnicos (ex: falhas de comunicação Modbus) para linguagem operacional.
+Sugestão de estratégias de Load Balancing (balanceamento de carga) em cenários de alta demanda.
+O que o Chatbot NÃO FAZ (Out-of-Scope):
+Manutenção física ou diagnóstico de hardware que exija presença no local.
+Processamento direto de pagamentos bancários (ele gera o relatório, mas não é um gateway de pagamento).
+Gestão de usuários externos (clientes finais); o foco é 100% no operador da infraestrutura.
 3. Tecnologias Selecionadas e Justificativa
 LLMs para Teste: OpenAI GPT-4o, Google Gemini 1.5 Flash e Llama 3.3 (Groq).
 Justificativa: Alta capacidade de raciocínio lógico para lidar com dados estruturados de energia e o uso do llama permite rodar modelos locais, garantindo privacidade e menor latência em operações críticas.
