@@ -4,9 +4,10 @@
 ## 1. Identificação do Projeto
 * **Projeto:** ChargeGrid Intelligence (EV Challenge 2026)
 * **Parceria:** GoodWe & FIAP
-* **Integrantes:** [NOME - RM]
+* **Integrantes:** [Vinicius Molena - 571270]
 
----
+  
+--- 
 
 ## 2. O Problema e a Proposta do Chatbot
 
